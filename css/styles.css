@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background-color: #f7cbf3;
+}
+.wrapper {
+  width: 100%;
+  height: 98vh;
+  text-align: center;
+  border: 2px solid #fff;
+}
+.container {
+  padding: 30px;
+  width: 700px;
+  margin: 30px auto;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.checked {
+  text-decoration: line-through;
+}
+.title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 40px;
+  font-style: italic;
+}
+.input {
+  padding: 10px 16px;
+  min-width: 300px;
+  min-height: 40px;
+  border: 1px solid #f5f4fa;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: #ffffff;
+}
+.addBtn,
+.clBtn {
+  min-width: 73px;
+  min-height: 40px;
+  padding: 6px 22px;
+  border: none;
+  cursor: pointer;
+  background: #f5f4fa;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #f7cbf3;
+}
