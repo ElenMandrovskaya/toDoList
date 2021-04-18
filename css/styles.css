@@ -32,7 +32,7 @@ img {
   height: auto;
 }
 body {
-  background-color: #f7cbf3;
+  background-color: #e4b2e0;
 }
 .wrapper {
   width: 100%;
@@ -47,8 +47,9 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #f7cbf3;
 }
-.checked {
+.checked .todo-text {
   text-decoration: line-through;
 }
 .title {
@@ -56,16 +57,25 @@ body {
   color: #fff;
   font-size: 40px;
   font-style: italic;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .input {
+  margin-bottom: 40px;
   padding: 10px 16px;
   min-width: 300px;
   min-height: 40px;
-  border: 1px solid #f5f4fa;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border: 1px solid #bdbaba;
+  filter: drop-shadow(0px 1px 1px rgba(255, 255, 255, 0.692));
   border-radius: 4px;
   background-color: transparent;
   color: #ffffff;
+  outline: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.input:focus {
+  border: 1px solid #f5f4fa;
 }
 .addBtn,
 .clBtn {
@@ -82,4 +92,52 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #f7cbf3;
+  border: 1px solid #bdbaba;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.addBtn:hover,
+.addBtn:focus,
+.clBtn:hover,
+.clBtn:focus {
+  background-color: #d647ca;
+  color: #fff;
+  outline: none;
+}
+.todo-list {
+  width: 480px;
+  margin: 0 auto;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todo-text {
+  margin-right: auto;
+  color: #fff;
+  font-size: 25px;
+  font-style: italic;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.done-btn {
+  color: #82c29d;
+  border-radius: 50%;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.rmv-btn {
+  color: #eb7171;
+  border-radius: 50%;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  font-size: 18px;
 }

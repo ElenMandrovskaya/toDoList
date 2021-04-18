@@ -14,19 +14,16 @@ function createItem(e) {
     const itemName = document.createElement('p');
         itemName.classList.add('todo-text');
         itemName.textContent = refs.input.value;
-        itemName.style.marginRight = '100px'
         itemEl.appendChild(itemName);
 
     const itemBtnDone = document.createElement('button');
         itemBtnDone.classList.add('done-btn');
         itemBtnDone.textContent = 'done';
-        itemBtnDone.style.backgroundColor = 'green';
         itemEl.appendChild(itemBtnDone);
 
     const itemBtnRmv = document.createElement('button');
         itemBtnRmv.classList.add('rmv-btn');
         itemBtnRmv.textContent = 'remove';
-        itemBtnRmv.style.backgroundColor = 'red';
         itemEl.appendChild(itemBtnRmv);
 
     refs.list.appendChild(itemEl);
